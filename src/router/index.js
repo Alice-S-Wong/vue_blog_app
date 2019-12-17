@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Sample from '../views/Sample.vue'
-import Posts from '../views/Posts.vue'
+import Index from '../views/Index.vue'
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
@@ -21,9 +21,9 @@ const routes = [
     component: Sample
   },
   {
-    path: '/posts',
-    name: 'posts',
-    component: Posts
+    path: '/index',
+    name: 'index',
+    component: Index
   },
   { 
     path: "/signup", 
