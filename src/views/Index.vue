@@ -2,7 +2,7 @@
   <div class="posts-index">
     <h1>{{ message }}</h1>
     <div v-for="post in posts">
-      <p>User id: {{ post.id }}</p>
+      <p>User id: {{ post.user_id }}</p>
       <h2>{{ post.title }}</h2>
       <p>{{ post.body }}</p>
       <img :src="post.image">

@@ -6,6 +6,7 @@ import Index from '../views/Index.vue'
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
+import New from "../views/New.vue";
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/logout", 
     name: "logout", 
     component: Logout 
+  },
+  { 
+    path: "/new", 
+    name: "new", 
+    component: New 
   },
   {
     path: '/about',
