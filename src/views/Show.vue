@@ -4,6 +4,8 @@
     <h1>{{ post.title }}</h1>
     <p>{{ post.body }}</p>    
     <img v-bind:src="post.image">
+    <br>
+    <router-link v-bind:to="`/posts/${post.id}/edit`">Edit Post</router-link>
   </div>
 </template>
 

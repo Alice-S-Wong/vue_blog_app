@@ -1,7 +1,6 @@
 <template>
   <div class="New-Post">
     <h1>{{ message }}</h1>
-    <p>User ID:<input type="text" v-model="newUserId"></p>
     <p>Title:<input type="text" v-model="newTitle"></p>
     <p>Body:<input type="text" v-model="newBody"></p>
     <p>Image URL:<input type="text" v-model="newImage"></p>
@@ -19,7 +18,6 @@ export default {
   data: function() {
     return {
       message: "Create a Post",
-      newUserId: "",
       newTitle: "",
       newBody: "",
       newImage: ""
@@ -29,7 +27,6 @@ export default {
   methods: {
     createPost: function() {
       var params = {
-        id: this.newUserId,
         title: this.newTitle,
         body: this.newBody,
         image: this.newImage
