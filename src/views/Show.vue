@@ -1,5 +1,6 @@
 <template>
   <div class="show">
+    <button v-on:click="deletePost()">Delete Post</button>
     <h1>{{ message }}</h1>
     <h1>{{ post.title }}</h1>
     <p>{{ post.body }}</p>    
@@ -27,6 +28,13 @@ export default {
       this.post = response.data;
     });
   },
-  methods: {}
+  methods: {
+    deletePost: function() {
+      console.log('deleting post'); 
+      axios.delete(`/api/posts/${this.$route.params.id}`).then(response => {
+        this.$router.push("/posts");
+      });
+    }
+  }
 };
 </script>

@@ -32,7 +32,7 @@ export default {
         image: this.newImage
       };
       axios.post("/api/posts", params).then(response => {
-        this.$router.push("/index");
+        this.$router.push("/posts");
       });
     }
   }
